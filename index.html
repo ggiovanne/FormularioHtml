@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+<!---->    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Formulário Itaú</title>
+</head>
+<body>
+
+<div class="imagem">
+
+     <img src="imagens/itau-logo-1-1.png" alt="logo itau">
+
+</div>
+
+<div class="formulario">
+
+    <div>
+        <h1 id="titulo">Cadastro de Funcionario</h1>
+    </div>
+    <hr class="linha">
+
+    <form action="">
+        <div>
+            <label for="nome" >Nome Completo*</label><br>
+            <input type="text" name="nome" id="nome" required> 
+        </div>
+
+        <div>
+            <label for="cpf"> CPF* </label><br>
+            <input type="number" name="cpf" id="cpf" required> 
+        </div>
+
+        <div>
+            <label for="rg"> RG* </label><br>
+            <input type="number" name="rg" id="rg" required> 
+        </div>
+
+        <div>
+            <label for="celular"> Celular* </label><br>
+            <input type="tel" name="tel" id="tel" required> 
+        </div>
+
+        <div>
+            <label for="endereco"> Endereço* </label><br>
+            <input type="text" name="endereço" id="endereço" required> 
+        </div>
+
+        <div>
+            <label for="numero"> Número* </label><br>
+            <input type="text" name="número" id="número" required> 
+        </div>
+
+        <div>
+            <label for="bairro"> Bairro* </label><br>
+            <input type="text" name="bairro" id="bairro" required> 
+        </div>
+
+        <div>
+            <label for="cidade"> Cidade* </label><br>
+            <input type="text" name="cidade" id="cidade" required> 
+        </div>
+
+        <div>
+            <label for="cep"> Cep* </label><br>
+            <input type="number" name="cep" id="cep" required> 
+        </div>
+
+        <div>
+            <label for="email"> Email* </label><br>
+            <input type="email" name="email" id="cep" required>
+        </div>
+
+        <div>
+            <label> Gênero* </label><br> 
+            <label for="">
+                <input type="radio" name="genero" value="Masculino"> Masculino
+            </label>
+
+            <label>
+                <input type="radio" name="genero" value="Feminino"> Feminino
+            </label>
+
+            <label>
+                <input type="radio" name="genero" value="Prefiro não dizer" checked>  Prefiro não dizer
+            </label>
+        </div>
+
+        <div>
+            <label for="senioridade"> Senioridade* </label><br>
+            <select id="senioridade">
+                <option selected disabled value=""> Selecione </option>
+                <option> Estagiário </option>
+                <option> Júnior </option>
+                <option> Pleno </option>
+                <option> Senior </option>
+                <option> Master </option>
+                <option> Outro </option>
+            </select>
+        </div>
+
+       <fieldset class="grupo">
+            <div>
+                <label> Selecione as tecnologias que utiliza atualmente </label> <br>
+                <input type="checkbox" name="tec1" id="tec1" value="HTML"> 
+                <label for="tec1">HTML</label>
+                <input type="checkbox" name="tec2" id="tec2" value="CSS"> 
+                <label for="tec2">CSS</label>
+                <input type="checkbox" name="tec3" id="tec3" value="JavaScript"> 
+                <label for="tec3">JavaScript</label>
+                <input type="checkbox" name="tec4" id="tec4" value="PHP"> 
+                <label for="tec4">PHP</label> <br>
+                <input type="checkbox" name="tec5" id="tec5" value="C#"> 
+                <label for="tec5">C#</label>
+                <input type="checkbox" name="tec6" id="tec6" value="Python"> 
+                <label for="tec6">Python</label>
+                <input type="checkbox" name="tec7" id="tec7" value="Java"> 
+                <label for="tec7">Java</label>
+                <input type="checkbox" name="tec8" id="tec8" value="SpringBoot"> 
+                <label for="tec8">SpringBoot</label><br>
+                <input type="checkbox" name="tec9" id="tec9" value="NodeJs">
+                <label for="tec9">NodeJs</label>
+            </div>
+       </fieldset>
+
+       <div>
+            <br>
+            <label> Conte um pouco da sua experiência</label><br>
+            <textarea name="experiencia" id="experiencia" cols="45" rows="8"></textarea>
+       </div>
+
+       <div class="botao">
+            <button type="submit" class="campo"> Enviar </button>
+       </div>
+       
+       <div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block"> Enviar </button>
+        </div>
+
+    </form>
+
+</div>
+    
+</body>
+</html>
